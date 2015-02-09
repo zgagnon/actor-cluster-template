@@ -1,14 +1,16 @@
 import NativePackagerKeys._
 
-name := "sharding-test"
+name := "My cluster project"
 
-version := "1"
+organization in ThisBuild := "My Org"
 
-scalaVersion := "2.11.2"
+version in ThisBuild := "1.0"
 
-libraryDependencies ++= List(
+scalaVersion in ThisBuild := "2.11.5"
+
+libraryDependencies in ThisBuild ++= List(
   "com.typesafe.akka" %% "akka-cluster" % "2.3.9",
   "com.typesafe.akka" %% "akka-kernel" % "2.3.9",
   "com.typesafe.akka" %% "akka-contrib" % "2.3.9")
 
-enablePlugins(JavaAppPackaging)
+
